@@ -1,0 +1,11 @@
+---
+- name: Deploy static routes on IOS
+  hosts: ios
+  connection: network_cli
+  gather_facts: no 
+
+  tasks:
+    - name: Deploy static routes 
+      ios_config:
+         lines: 
+           - ip route 172.16.1.0 255.255.255.0 172.16.2.1
