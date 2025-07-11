@@ -1,2 +1,2 @@
 # Cisco Enterprise
-This repo contains configurations for Ciscc Enterprise Solutions.
+This repo contains configurations for Cisco Enterprise Solutions.
