@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<inventory xmlns="https://www.cisco.com/ns/routers"
+           xmlns:prod="https://www.cisco.com/ns/routers/prod"
+           xmlns:dev="https://www.cisco.com/ns/routers/dev">
+
+    <prod:device name="csr1kv1">
+        <prod:osversion>16.09</prod:osversion>
+        <prod:uptime>2 days</prod:uptime>
+        <prod:vendor>cisco</prod:vendor>
+        <prod:serial>XB968781</prod:serial>
+        <prod:snmp name="public" permission="ro"/>
+        <prod:snmp name="private" permission="rw"/>
+    </prod:device>
+
+    <prod:device name="csr1kv2">
+        <prod:osversion>16.09</prod:osversion>
+        <prod:uptime>14 days</prod:uptime>
+        <prod:vendor>cisco</prod:vendor>
+        <prod:serial>XB587381</prod:serial>
+        <prod:snmp name="public" permission="ro"/>
+        <prod:snmp name="private" permission="rw"/>
+    </prod:device>
+
+    <dev:device name="csr1kv3">
+        <dev:osversion>16.09</dev:osversion>
+        <dev:uptime>182 days</dev:uptime>
+        <dev:vendor>cisco</dev:vendor>
+        <dev:serial>XB914781</dev:serial>
+        <dev:snmp name="public" permission="ro"/>
+        <dev:snmp name="private" permission="rw"/>
+    </dev:device>
+</inventory>
