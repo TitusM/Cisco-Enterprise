@@ -10,5 +10,6 @@ data = yaml.safe_load(yaml_data)
 #check the type of data
 print(type(data)) #<class 'dict'>
 
+
 #convert YAML to JSON.
 print(json.dumps(data, indent=4))

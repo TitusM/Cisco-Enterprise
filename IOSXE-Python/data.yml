@@ -1,0 +1,33 @@
+---
+hostname: DIST-1
+os_version: 16.09
+
+vlans_list:
+  - 100
+  - 200
+  - 300
+
+#Define a list of VLANs that will appear as a list of dictionaries
+vlans:
+  - id: 10
+    name: server_vlan
+  - id: 20
+    name: voice_vlan
+  - id: 30
+    name: video_vlan
+
+#Creating a nested VLAN dictionary with VLAN numbers as nested keys and different names as their values
+vlans_dictionary:
+  1315: infra_vlan
+  1316: reserved_vlan
+  1400: test_vlan
+
+snmp:
+  ro: 
+    - public
+    - cisco
+  rw: 
+    - private
+    - secure
+  contact: Titus
+  location: San Jose
