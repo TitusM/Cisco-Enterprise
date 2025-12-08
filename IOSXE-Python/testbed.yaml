@@ -1,0 +1,30 @@
+testbed:
+  name: Enterprise Testbed
+  
+devices:
+  SW-1:
+    os: iosxe
+    type: switch
+    credentials:
+      default:
+        username: admin
+        password: device-password
+      enable:
+        password: device-password
+    connections:
+      cli:
+        protocol: ssh
+        ip: 10.1.1.1
+  SW-2:
+    os: iosxe
+    type: switch
+    credentials:
+      default:
+        username: admin
+        password: device-password
+      enable:
+        password: device-password
+    connections:
+      cli:
+        protocol: ssh
+        ip: 10.1.1.2
